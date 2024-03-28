@@ -1,6 +1,15 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 header {
   text-align: center;
-  font-family: "Poppins";
+
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/images/hero-bridge.jpeg");
   width: 100%;
@@ -46,4 +55,58 @@ h3 {
 
 .learn-more-button:hover {
   background-color: rgba(217, 216, 216, 0.827);
+}
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/images/footer.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  color: white;
+  padding: 50px 0;
+}
+
+footer h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+footer p {
+  font-size: 14px;
+  text-align: justify;
+  opacity: 0.6;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 30px;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 80px 0;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
 }
