@@ -60,7 +60,7 @@ header h3 {
 .section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 .section h4 {
@@ -72,6 +72,10 @@ header h3 {
 .section h2 {
   font-size: 40px;
   margin-top: 0;
+}
+
+.section h6 {
+  font-size: 13px;
 }
 
 .section p {
@@ -90,6 +94,42 @@ header h3 {
 
 .grid-2col {
   grid-template-columns: 1fr 1fr;
+}
+
+.grid-3col {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.secondary {
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.card {
+  text-align: start;
+  background-color: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 0 30px;
+}
+
+.card-footer {
+  padding-top: 30px;
+}
+
+.btn {
+  background-color: #462cb2;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 10px 12px;
 }
 
 footer {
@@ -138,15 +178,13 @@ footer a {
     font-size: 22px;
   }
 
-  .grid-2col {
-    grid-template-columns: 1fr;
-    padding-top: 25px;
-    grid-gap: 10px;
-  }
-
-  .footer-grid {
+  .grid {
     grid-template-columns: 1fr;
     grid-gap: 15px;
+  }
+
+  .grid-2col {
+    padding-top: 25px;
   }
 
   footer h5 {
