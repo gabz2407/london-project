@@ -97,13 +97,22 @@ header h3 {
   grid-template-columns: 1fr 1fr;
 }
 
-.grid-3col {
+.grid-3col,
+.grid-gallery {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .secondary {
   background-color: #f8f8f8;
+}
+
+.text-center {
   text-align: center;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 15/10;
 }
 
 .card {
@@ -113,6 +122,11 @@ header h3 {
 
 .card-body {
   padding: 0 30px 30px;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+  margin-bottom: 30px;
 }
 
 .card-body a {
@@ -136,6 +150,10 @@ header h3 {
   padding: 10px 12px;
 }
 
+.gallery-img {
+  aspect-ratio: 1/1;
+}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("/images/footer.jpeg");
@@ -143,7 +161,7 @@ footer {
   background-size: cover;
   background-position: top;
   color: white;
-  padding: 0 0 0 50px;
+  padding: 0 50px;
 }
 
 footer h5 {
@@ -168,7 +186,7 @@ footer a {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   header {
     padding: 80px 0;
   }
@@ -191,6 +209,10 @@ footer a {
     padding-top: 25px;
   }
 
+  .grid-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
   footer h5 {
     margin: 10px 0;
   }
@@ -206,5 +228,9 @@ footer a {
   .section-img {
     display: block;
     margin: 0 auto;
+  }
+
+  .embed {
+    display: none;
   }
 }
